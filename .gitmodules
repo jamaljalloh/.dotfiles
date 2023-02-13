@@ -1,0 +1,6 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "zsh/.zgenom"]
+	path = zsh/.zgenom
+	url = https://github.com/jandamm/zgenom.git

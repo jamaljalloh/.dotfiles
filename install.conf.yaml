@@ -1,0 +1,34 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    # -
+    #   command: zsh ./macos/script-brew-installs.zsh
+    #   description: Installing essential packages with Homebrew
+    #   stdin: true
+    #   stdout: true
+    #   stderr: true
+    # -
+    #   command: zsh ./macos/script-set-defaults.zsh
+    #   description: Setting MacOS defaults
+    #   stdout: true
+
+- link:
+    ~/.dotfiles:
+      path: .
+      force: true
+    ~/.zshrc:
+      path: zsh/.zshrc
+      force: true
+    ~/.p10k.zsh:
+      path: zsh/.p10k.zsh
+      force: true
+    ~/.zgenom: 
+      path: zsh/.zgenom
+      force: true
+    ~/.zsh-functions: zsh/zsh-functions
+
